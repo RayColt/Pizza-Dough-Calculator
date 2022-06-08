@@ -16,8 +16,8 @@ function calculate(flour)
 	var oil = 0.0683;
 	if(fl <= 0) fl = 1;
 	document.getElementById("flour").value	= fl.toPrecision(3);
-	document.getElementById("yeast").value	= (fl*salt).toPrecision(3);
-	document.getElementById("salt").value	= (fl*yeast).toPrecision(3);
+	document.getElementById("yeast").value	= (fl*yeast).toPrecision(3);
+	document.getElementById("salt").value	= (fl*salt).toPrecision(3);
 	document.getElementById("sugar").value	= (fl*sugar).toPrecision(3);
 	document.getElementById("water").value	= (fl*water).toPrecision(3)-15-((fl*oil).toPrecision(3));
 	document.getElementById("olive_oil").value = (fl*oil).toPrecision(3);
