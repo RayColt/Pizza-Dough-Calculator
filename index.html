@@ -8,6 +8,7 @@
 function calculate(flour)
 {
 	if(isNaN(flour)) flour = 250;
+	if(flour < 50) flour = 50;
 	var fl = flour;
 	var salt = 0.00715;
 	var yeast = 0.0159;
@@ -36,10 +37,10 @@ function getTextFieldValue()
   </tr>
   <tr>
     <td>Flour:</td>
-    <td><input type="text" name="flour" id="flour" /></td>
+    <td><input style="" type="text" name="flour" id="flour" /></td>
   </tr>
   <tr>
-    <td>Yeast (in 15ml water!): </td>
+    <td>Yeast (in 15ml water!):</td>
     <td><input type="text" name="yeast" id="yeast" disabled="disabled" /></td>
   </tr>
   <tr>
