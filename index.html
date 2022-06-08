@@ -10,18 +10,18 @@ function calculate(flour)
 	if(isNaN(flour)) flour = 250;
 	if(flour < 50) flour = 50;
 	var fl = flour;
-	var salt = 0.00715;
-	var yeast = 0.0159;
-	var sugar = 0.02965;
-	var water = 0.55;
-	var oil = 0.0683;
+	var salt = 0.0075;
+	var yeast = 0.015;
+	var sugar = 0.03;
+	var water = 0.35;
+	var oil = 0.07;
 	if(fl <= 0) fl = 1;
-	document.getElementById("flour").value	= fl.toPrecision(3);
-	document.getElementById("yeast").value	= (fl*yeast).toPrecision(3);
-	document.getElementById("salt").value	= (fl*salt).toPrecision(3);
-	document.getElementById("sugar").value	= (fl*sugar).toPrecision(3);
-	document.getElementById("water").value	= (fl*water).toPrecision(3)-15-((fl*oil).toPrecision(3));
-	document.getElementById("olive_oil").value = (fl*oil).toPrecision(3);
+	document.getElementById("flour").value	= fl;
+	document.getElementById("yeast").value	= (fl*yeast).toPrecision(2);
+	document.getElementById("salt").value	= (fl*salt).toPrecision(2);
+	document.getElementById("sugar").value	= (fl*sugar).toPrecision(2);
+	document.getElementById("water").value	= (fl*water).toPrecision(2);//minus 15ml yeast water and oil
+	document.getElementById("olive_oil").value = (fl*oil).toPrecision(2);
 }
 
 function getTextFieldValue()
