@@ -22,10 +22,9 @@ function calculate(flour)
 	document.getElementById("water").value	= +(fl*water).toFixed(4);//minus 15ml yeast water and oil
 	document.getElementById("olive_oil").value = +(fl*oil).toFixed(4);
 }
-function getTextFieldValue()
+function getFlourAmount()
 {
-	var ret = document.getElementById("flour").value;
-	return ret;
+	return document.getElementById("flour").value;
 }
 </script>
 </head>
@@ -61,7 +60,7 @@ function getTextFieldValue()
     <td colspan="2">let the dough rise for 1-2 hours</td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate(parseFloat(getTextFieldValue()));" /></td>
+    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate(parseFloat(getFlourAmount()));" /></td>
   </tr>
 </table>
 </body>
