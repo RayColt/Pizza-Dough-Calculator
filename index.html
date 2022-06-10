@@ -24,14 +24,14 @@ function calculate(flour)
 	var salt = 0.0075;
 	var yeast = 0.015;
 	var sugar = 0.03;
-	var water = 0.35;
+	var water = 0.305;
 	var oil = 0.07;
 	if(fl <= 0) fl = 1;
 	document.getElementById("flour").value	= +fl.toFixed(4);
 	document.getElementById("yeast").value	= +(fl*yeast).toFixed(4);
 	document.getElementById("salt").value	= +(fl*salt).toFixed(4);
 	document.getElementById("sugar").value	= +(fl*sugar).toFixed(4);
-	document.getElementById("water").value	= +(fl*water).toFixed(4);//minus 15ml yeast water and oil
+	document.getElementById("water").value	= +(fl*water).toFixed(4);//minus 30ml yeast water and oil
 	document.getElementById("olive_oil").value = +(fl*oil).toFixed(4);
 }
 function getFlourAmount()
@@ -49,7 +49,7 @@ function getFlourAmount()
     <td><input style="" type="text" name="flour" id="flour" /></td>
   </tr>
   <tr>
-    <td>Yeast (in 15ml water!):</td>
+    <td>Yeast (in 30ml water!):</td>
     <td><input type="text" name="yeast" id="yeast" disabled="disabled" /></td>
   </tr>
   <tr>
