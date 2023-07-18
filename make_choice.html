@@ -22,7 +22,7 @@ function makeChoice()
 
 	for(var i = 0;i < count; i++)
 	{
-		if(choice==i)
+		if(choice == i)
 		{
 			lines[i] =  ">>>" + lines[i] + "<<<" + "\n";
 		}
@@ -32,7 +32,7 @@ function makeChoice()
 		}
 	}
 	// remove the commas
-	document.getElementById("data").value = lines.join('');
+	document.getElementById("data").value = lines.join("");
 
 	// remove last char, the \n
 	document.getElementById("data").value = document.getElementById("data").value.slice(0, -1);
