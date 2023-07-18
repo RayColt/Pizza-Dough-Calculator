@@ -1,0 +1,51 @@
+<html>
+<head>
+<!--Can not make a choice? What too eat or buy? Let this script make it for you!-->
+<h2>Make choice for me!</h2>
+<script type="text/javascript">
+function getRandomInt(max)
+{
+  return Math.floor(Math.random() * max);
+}
+
+function setText()
+{
+	document.getElementById("data").value = "kroket\nrijst\npatat\npap";
+}
+
+function makeChoice()
+{
+	var text = document.getElementById("data").value;
+	var lines = text.split(/\r|\r\n|\n/);
+	var count = lines.length;
+	var choice = getRandomInt(count);
+
+	for(var i = 0;i < count; i++)
+	{
+		if(choice==i)
+		{
+			lines[i] =  ">>>" + lines[i] + "<<<" + "\n";
+		}
+		else
+		{
+			lines[i]  = lines[i] + "\n";
+		}
+	}
+	// remove the commas
+	document.getElementById("data").value = lines.join('');
+
+	// remove last char, the \n
+	document.getElementById("data").value = document.getElementById("data").value.slice(0, -1);
+
+	// focus textarea and place cursor at the end
+	const textarea = document.querySelector("textarea");
+	textarea.focus();
+	textarea.setSelectionRange(textarea.value.length, textarea.value.length);
+}
+</script>
+</head>
+<body onLoad="setText()">
+<textarea id="data" name="data" cols="50" rows="15"></textarea><br />
+<br /><input type="submit" onClick="makeChoice()" />
+</body>
+</html>
