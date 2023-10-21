@@ -21,6 +21,7 @@ function calculate(flour)
 	document.getElementById("sugar").value	= +(fl*sugar).toFixed(4);
 	document.getElementById("water").value	= +(fl*water).toFixed(4);
 	document.getElementById("olive_oil").value = +(fl*oil).toFixed(4);
+	document.getElementById("dough_weight").value = +(fl+salt+yeast+sugar+water+oil).toFixed(2);
 }
 function getFlourAmount()
 {
@@ -56,6 +57,13 @@ function getFlourAmount()
     <td>Olive Oil:</td>
     <td><input type="text" name="olive_oil" id="olive_oil" disabled="disabled" /></td>
   </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Dough Weight(approx):</td>
+    <td><input type="text" name="dough_weight" id="dough_weight" disabled="disabled" /></td>
+  </tr>	
   <tr>
     <td colspan="2">let the dough rise for 5-10 minutes in foil</td>
   </tr>
