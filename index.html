@@ -9,25 +9,25 @@ function calculate(flour)
 {
 	if(isNaN(flour)) flour = 200;
 	var fl = flour;
-	var salt = 0.0075;
-	var yeast = 0.015;
-	var sugar = 0.03;
-	var water = 0.5222;
-	var oil = 0.0666;
+	const salt = 0.0075;
+	const yeast = 0.015;
+	const sugar = 0.03;
+	const water = 0.5222;
+	const oil = 0.0666;
 	if(fl <= 0) fl = 1;
-	document.getElementById("flour").value	= +fl.toFixed(4);
-	document.getElementById("yeast").value	= +(fl*yeast).toFixed(4);
-	document.getElementById("salt").value	= +(fl*salt).toFixed(4);
-	document.getElementById("sugar").value	= +(fl*sugar).toFixed(4);
-	document.getElementById("water").value	= +(fl*water).toFixed(4);
-	document.getElementById("olive_oil").value = +(fl*oil).toFixed(4);
-	fl = Number.parseFloat(document.getElementById("flour").value);
-	yeast = Number.parseFloat(document.getElementById("yeast").value);
-	salt = Number.parseFloat(document.getElementById("salt").value);
-	sugar = Number.parseFloat(document.getElementById("sugar").value);
-	water = Number.parseFloat(document.getElementById("water").value);
-	oil = Number.parseFloat(document.getElementById("olive_oil").value);
-	var sum = fl + yeast + salt + sugar + water + oil;
+	document.getElementById("flour").value	= Number.parseFloat(fl.toFixed(4));
+	document.getElementById("yeast").value	= Number.parseFloat((fl*yeast).toFixed(4));
+	document.getElementById("salt").value	= Number.parseFloat((fl*salt).toFixed(4));
+	document.getElementById("sugar").value	= Number.parseFloat((fl*sugar).toFixed(4));
+	document.getElementById("water").value	= Number.parseFloat((fl*water).toFixed(4));
+	document.getElementById("olive_oil").value = Number.parseFloat((fl*oil).toFixed(4));
+	var f = Number.parseFloat(document.getElementById("flour").value);
+	var y = Number.parseFloat(document.getElementById("yeast").value);
+	var sa = Number.parseFloat(document.getElementById("salt").value);
+	var su = Number.parseFloat(document.getElementById("sugar").value);
+	var w = Number.parseFloat(document.getElementById("water").value);
+	var o = Number.parseFloat(document.getElementById("olive_oil").value);
+	var sum = f + y + sa+ su + w + o;
 	document.getElementById("dough").value = sum.toFixed();
 }
 function getFlourAmount()
