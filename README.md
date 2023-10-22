@@ -1,5 +1,6 @@
 # Pizza-And-Roti-Dough-Calculator
 Pizza And Roti Dough Calculator, just copy the html file to your phone, tabloid or computer!<br/>
+Change its constants to your own convenience.<br />
 If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to the script.
 <br/>
 Humidity can be adjusted to aprox 260 ml fluids for 500 gr flour or use <br/>The baker’s percentage formula:<br/> 
