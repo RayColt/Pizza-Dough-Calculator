@@ -6,4 +6,4 @@ If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to
 for 100 grams of flour and a hydration level of 60%, you would need 60 grams of water. <br />
 The dough weight is equal to the weight of the flour plus the weight of the water(fluids).<br/>
 <a href="https://raycolt.github.io/Pizza-And-Roti-Dough-Calculator">WORKING EXAMPLE</a><br/>
-<img src='https://github.com/RayColt/Pizza-And-Roti-Dough-Calculator/blob/main/image/pdc_.jpg'/>
+<img src='https://github.com/RayColt/Pizza-And-Roti-Dough-Calculator/blob/main/image/pdc_1.jpg'/>
