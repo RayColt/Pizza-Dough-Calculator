@@ -1,4 +1,4 @@
-# Pizza-Dough-Calculator
+# Pizza-And-Roti-Dough-Calculator
 Pizza Dough Calculator, just copy the html file to your phone, tabloid or computer!<br/>
 If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to the script.
 <br/>
