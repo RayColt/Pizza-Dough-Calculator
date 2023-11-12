@@ -1,6 +1,12 @@
 # Pizza-Dough-Calculator
 Pizza And Roti Dough Calculator, just copy the html file to your phone, tabloid or computer!<br/>
-Change its constants to your own convenience.<br /><br />
+Change its constants to your own convenience. I am testing these ones at the moment, for example:<br />
+	const salt = 0.012;<br />
+	const yeast = 0.016;<br />
+	const sugar = 0.03;<br />
+	const water = 0.5222;<br />
+	const oil = 0.0666;<br />
+<br /><br />
 If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to the script.
 <br/><br/>The baker’s humidity percentage formula:<br/> 
 For 100 grams of flour and a hydration level of 60%, you would need 60 grams of water. <br /><br />
