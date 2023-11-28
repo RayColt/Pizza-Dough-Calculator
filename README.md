@@ -7,7 +7,7 @@ Change its constants to your own convenience. I am testing these ones at the mom
 	const water = 0.5222;<br />
 	const oil = 0.0666;<br />
 <br />
-If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to the script. I prefer Citric Acid. ¹/12 of a teaspoon.
+If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to the script. I prefer Citric Acid. ¹/12 of a teaspoon for 250 grams flour.
 <br/><br/>The baker’s humidity percentage formula:<br/> 
 For 100 grams of flour and a hydration level of 60%, you would need 60 grams of water. <br /><br />
 The dough weight is equal to the weight of the flour plus the weight of the water(fluids).<br/><br />
