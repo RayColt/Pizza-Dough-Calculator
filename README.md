@@ -1,7 +1,7 @@
 # Pizza-Dough-Calculator
-Pizza And Roti Dough Calculator, just copy the html file to your phone, tabloid or computer!<br/>
+Pizza Dough Calculator, just copy the html file to your phone, tabloid or computer!<br/>
 Change its constants to your own convenience. I am testing these ones at the moment, for example:<br />
-	const salt = 0.024;<br />
+	const salt = 0.02;<br />
 	const yeast = 0.028;<br />
 	const sugar = 0.032;<br />
 	const water = 0.5222;<br />
