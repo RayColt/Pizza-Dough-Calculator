@@ -12,9 +12,9 @@ function calculate(flour)
 	const water = 0.555;
 	const butter = 0.222;
 	if(fl <= 0) fl = 1;
-	document.getElementById("flour").value	= Number.parseFloat(fl.toFixed(4));
-	document.getElementById("water").value	= Number.parseFloat((fl*water).toFixed(4));
-	document.getElementById("butter").value = Number.parseFloat((fl*butter).toFixed(4));
+	document.getElementById("flour").value	= Number.parseFloat(fl.toFixed(0));
+	document.getElementById("water").value	= Number.parseFloat((fl*water).toFixed(0));
+	document.getElementById("butter").value = Number.parseFloat((fl*butter).toFixed(0));
 	var f = Number.parseFloat(document.getElementById("flour").value);
 	var w = Number.parseFloat(document.getElementById("water").value);
 	var b = Number.parseFloat(document.getElementById("butter").value);
@@ -40,7 +40,7 @@ function getFlourAmount()
     <td><input type="number" name="water" id="water" disabled="disabled" /></td>
   </tr>
   <tr>
-    <td>Butter:</td>
+    <td>Butter/Magarine:</td>
     <td><input type="number" name="butter" id="butter" disabled="disabled" /></td>
   </tr>
   <tr>
