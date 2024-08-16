@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ray's Pizza Dough Calculator</title>
 <script language="javascript" type="text/javascript">
-function calculate(flour)
+function calculate1(flour)
 {
 	if(isNaN(flour)) flour = 200;
 	var fl = flour;
-	const salt = 0.0075;
-	const yeast = 0.015;
-	const sugar = 0.03;
+	const salt = 0.02;
+	const yeast = 0.028;
+	const sugar = 0.032;
 	const water = 0.5222;
 	const oil = 0.0666;
 	if(fl <= 0) fl = 1;
@@ -30,13 +30,34 @@ function calculate(flour)
 	var sum = f + y + sa + su + w + o;
 	document.getElementById("dough").value = sum.toFixed();
 }
-function getFlourAmount()
+function calculate2(flour)
+{
+	if(isNaN(flour)) flour = 225;
+	var fl = flour;
+	const water = 0.555;
+	const butter = 0.222;
+	if(fl <= 0) fl = 1;
+	document.getElementById("flour2").value	= Number.parseFloat(fl.toFixed(4));
+	document.getElementById("water2").value	= Number.parseFloat((fl*water).toFixed(4));
+	document.getElementById("butter2").value = Number.parseFloat((fl*butter).toFixed(4));
+	var f = Number.parseFloat(document.getElementById("flour2").value);
+	var w = Number.parseFloat(document.getElementById("water2").value);
+	var b = Number.parseFloat(document.getElementById("butter2").value);
+	var sum = f  + w + b;
+	document.getElementById("dough2").value = sum.toFixed();
+}
+function getFlourAmount1()
 {
 	return document.getElementById("flour").value;
 }
+function getFlourAmount2()
+{
+	return document.getElementById("flour2").value;
+}
 </script>
 </head>
-<body><table width="350" border="0" cellspacing="2" cellpadding="2">
+<body>
+<table width="350" border="0" cellspacing="2" cellpadding="2">
   <tr>
     <td colspan="2"><b>Pizza Dough Calculator (gr/ml)</b>🍕</td>
   </tr>
@@ -72,7 +93,42 @@ function getFlourAmount()
     <td colspan="2">Let the dough rise for 5-10 minutes in foil.</td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate(parseFloat(getFlourAmount()));" /></td>
+    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate1(parseFloat(getFlourAmount1()));" /></td>
+  </tr>
+</table>
+<br />NEXT EXAMPLE:<br /><br />
+<table width="350" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td colspan="2"><b>Ready-Made flour Pita and Pizza Dough Calculator (gr/ml)</b>🥙🍕</td>
+  </tr>
+  <tr>
+    <td>Flour:</td>
+    <td><input style="" type="number" name="flour2" id="flour2" /></td>
+  </tr>
+  <tr>
+    <td>Water:</td>
+    <td><input type="number" name="water2" id="water2" disabled="disabled" /></td>
+  </tr>
+  <tr>
+    <td>Butter:</td>
+    <td><input type="number" name="butter2" id="butter2" disabled="disabled" /></td>
+  </tr>
+  <tr>
+    <td>Dough(sum):</td>
+    <td><input type="number" name="dough2" id="dough2" disabled="disabled" style="background:silver" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">Let the dough rise for 1 hour.</td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit" name="submit2" id="submit2" value="Calculate"  onclick="calculate2(parseFloat(getFlourAmount2()));" /></td>
+  </tr>
+    <tr>
+      <td colspan="2"><br />For example, if you have 500 grams of dough,<br />the final weight of the baked pizza base <br />could be around 400 grams.<br /><br />
+      Pita bread of 25 cm weighs 160 gram,<br />resulting in 200 gram dough, <br />resulting in approx 113 gram flour.<br /><br />
+      Pita bread of 21 cm weighs 110 gram,<br />resulting in 137 gram dough, <br />resulting in approx 77 gram flour.<br /><br />
+      Pita bread of 18 cm weighs 80 gram,<br />resulting in 100 gram dough, <br />resulting in approx 56 gram flour.<br />
+      </td>
   </tr>
 </table>
 </body>
