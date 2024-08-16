@@ -37,9 +37,9 @@ function calculate2(flour)
 	const water = 0.555;
 	const butter = 0.222;
 	if(fl <= 0) fl = 1;
-	document.getElementById("flour2").value	= Number.parseFloat(fl.toFixed(4));
-	document.getElementById("water2").value	= Number.parseFloat((fl*water).toFixed(4));
-	document.getElementById("butter2").value = Number.parseFloat((fl*butter).toFixed(4));
+	document.getElementById("flour2").value	= Number.parseFloat(fl.toFixed(0));
+	document.getElementById("water2").value	= Number.parseFloat((fl*water).toFixed(0));
+	document.getElementById("butter2").value = Number.parseFloat((fl*butter).toFixed(0));
 	var f = Number.parseFloat(document.getElementById("flour2").value);
 	var w = Number.parseFloat(document.getElementById("water2").value);
 	var b = Number.parseFloat(document.getElementById("butter2").value);
@@ -110,7 +110,7 @@ function getFlourAmount2()
     <td><input type="number" name="water2" id="water2" disabled="disabled" /></td>
   </tr>
   <tr>
-    <td>Butter/Margarine:</td>
+    <td>Butter/Magarine:</td>
     <td><input type="number" name="butter2" id="butter2" disabled="disabled" /></td>
   </tr>
   <tr>
