@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ray's Pizza Dough Calculator</title>
 <script language="javascript" type="text/javascript">
-function calculate1(flour)
+function calculate(flour)
 {
-	if(isNaN(flour)) flour = 200;
+	if(isNaN(flour)) flour = 250;
 	var fl = flour;
 	const salt = 0.02;
 	const yeast = 0.028;
 	const sugar = 0.032;
-	const water = 0.5222;
-	const magarine = 0.0666;
+	const water = 0.38;
+	const magarine = 0.2;
 	if(fl <= 0) fl = 1;
 	document.getElementById("flour").value	= Number.parseFloat(fl.toFixed(4));
 	document.getElementById("yeast").value	= Number.parseFloat((fl*yeast).toFixed(4));
@@ -26,8 +26,8 @@ function calculate1(flour)
 	var sa = Number.parseFloat(document.getElementById("salt").value);
 	var su = Number.parseFloat(document.getElementById("sugar").value);
 	var w = Number.parseFloat(document.getElementById("water").value);
-	var o = Number.parseFloat(document.getElementById("magarine").value);
-	var sum = f + y + sa + su + w + o;
+	var m = Number.parseFloat(document.getElementById("magarine").value);
+	var sum = f + y + sa + su + w + m;
 	document.getElementById("dough").value = sum.toFixed();
 }
 function calculate2(flour)
@@ -93,7 +93,7 @@ function getFlourAmount2()
     <td colspan="2">Let the dough rise for 1-5 hours under wet towel.</td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate(parseFloat(getFlourAmount()));" /></td>
+    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate(parseFloat(getFlourAmount1()));" /></td>
   </tr>
 </table>
 <br />NEXT EXAMPLE:<br /><br />
