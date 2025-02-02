@@ -4,8 +4,8 @@ Change its constants to your own convenience. I am testing these ones at the mom
 	const salt = 0.02;<br />
 	const yeast = 0.028;<br />
 	const sugar = 0.032;<br />
-	const water = 0.5222;<br />
-	const oil = 0.0666;<br />
+	const water = 0.38;<br />
+	const magarine = 0.2;<br />
 <br />
 If you use bread improver like Ascorbic Acid (Vitamin C) you can still add it to the script. I prefer Citric Acid. ¹/12 of a teaspoon for 250 grams flour.
 <br/><br/>The baker’s humidity percentage formula:<br/> 
