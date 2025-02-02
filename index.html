@@ -13,20 +13,20 @@ function calculate1(flour)
 	const yeast = 0.028;
 	const sugar = 0.032;
 	const water = 0.5222;
-	const oil = 0.0666;
+	const magarine = 0.0666;
 	if(fl <= 0) fl = 1;
 	document.getElementById("flour").value	= Number.parseFloat(fl.toFixed(4));
 	document.getElementById("yeast").value	= Number.parseFloat((fl*yeast).toFixed(4));
 	document.getElementById("salt").value	= Number.parseFloat((fl*salt).toFixed(4));
 	document.getElementById("sugar").value	= Number.parseFloat((fl*sugar).toFixed(4));
 	document.getElementById("water").value	= Number.parseFloat((fl*water).toFixed(4));
-	document.getElementById("olive_oil").value = Number.parseFloat((fl*oil).toFixed(4));
+	document.getElementById("magarine").value = Number.parseFloat((fl*magarine).toFixed(4));
 	var f = Number.parseFloat(document.getElementById("flour").value);
 	var y = Number.parseFloat(document.getElementById("yeast").value);
 	var sa = Number.parseFloat(document.getElementById("salt").value);
 	var su = Number.parseFloat(document.getElementById("sugar").value);
 	var w = Number.parseFloat(document.getElementById("water").value);
-	var o = Number.parseFloat(document.getElementById("olive_oil").value);
+	var o = Number.parseFloat(document.getElementById("magarine").value);
 	var sum = f + y + sa + su + w + o;
 	document.getElementById("dough").value = sum.toFixed();
 }
@@ -82,18 +82,18 @@ function getFlourAmount2()
     <td><input type="number" name="water" id="water" disabled="disabled" /></td>
   </tr>
   <tr>
-    <td>Olive Oil:</td>
-    <td><input type="number" name="olive_oil" id="olive_oil" disabled="disabled" /></td>
+    <td>Magarine:</td>
+    <td><input type="number" name="magarine" id="magarine" disabled="disabled" /></td>
   </tr>
   <tr>
     <td>Dough(sum):</td>
     <td><input type="number" name="dough" id="dough" disabled="disabled" style="background:silver" /></td>
   </tr>
   <tr>
-    <td colspan="2">Let the dough rise for 5-10 minutes in foil.</td>
+    <td colspan="2">Let the dough rise for 1-5 hours under wet towel.</td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate1(parseFloat(getFlourAmount1()));" /></td>
+    <td colspan="2"><input type="submit" name="submit" id="submit" value="Calculate"  onclick="calculate(parseFloat(getFlourAmount()));" /></td>
   </tr>
 </table>
 <br />NEXT EXAMPLE:<br /><br />
